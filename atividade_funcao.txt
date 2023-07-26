@@ -1,0 +1,48 @@
+console.log('bem vindo(a) , vamos usar a calculadora!!! ');
+
+let operador = prompt('Entre com um destes operadores mateamaticos ( +, -, * ou / ): ');
+
+
+let num1 = parseFloat(prompt('digite o primeiro numero: '));
+let num2 = parseFloat(prompt('digite o segundo numero: '));
+
+let result;
+
+
+if (operador == '+') {
+    soma();
+}
+else if (operador == '-') {
+    subtracao();
+}
+else if (operador == '*') {
+    multiplicacao();
+}
+else if (operador == '/') {
+    divisao();
+}
+else {
+    console.log('operação invalida resultado 0(zero)');
+}
+
+// display the result
+console.log(`${num1} ${operador} ${num2} = ${result}`);
+console.log('fim da calculadora')
+//fim da calculadora 
+// bloco das funcoes 
+function soma(numero1,numero2){
+     result = num1 + num2;
+    return  result
+}
+function subtracao(numero1,numero2){
+     result = num1 - num2;
+    return  result
+}
+function multiplicacao(numero1,numero2){
+     result = num1 * num2;
+    return  result
+}
+function divisao(numero1,numero2){
+     result = num1 / num2;
+    return  result
+}
